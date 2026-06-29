@@ -1,0 +1,42 @@
+baseURL = 'https://DBJARH.github.io/DBJ_ALBUM/'
+languageCode = 'en-us'
+title = 'DBJ Album'
+theme = 'PaperMod'
+paginate = 10
+
+[params]
+  author = 'Dusan B. Jovanovic'
+  description = 'DBJ public album — a portfolio of work and writing.'
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = false
+  comments = false
+  TocOpen = false
+  defaultTheme = 'auto'
+  homeInfoParams = { Title = 'DBJ Album', Content = 'A portfolio of work, images, and writing.' }
+
+[params.profileMode]
+  enabled = false
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[menu]
+  [[menu.main]]
+    name = 'Gallery'
+    url = '/gallery/'
+    weight = 1
+  [[menu.main]]
+    name = 'Posts'
+    url = '/posts/'
+    weight = 2
+  [[menu.main]]
+    name = 'Search'
+    url = '/search/'
+    weight = 3
