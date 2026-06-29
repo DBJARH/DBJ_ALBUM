@@ -6,7 +6,7 @@ paginate = 10
 
 [params]
   author = 'Dusan B. Jovanovic'
-  description = 'DBJ public album — a portfolio of work and writing.'
+  description = 'DBJ public album — a portfolio of works and writings.'
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true

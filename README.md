@@ -15,4 +15,4 @@ A portfolio of images and writeups.
 
 ---
 
-&copy; dbj@dbj.org | MIT License
+&copy; dbj@dbj.org | MIT License | CC BY SA 4.0
