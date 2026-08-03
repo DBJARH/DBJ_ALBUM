@@ -40,7 +40,7 @@ Content editor and Hugo technician. Tasks here are:
 - **Search page:** `content/search.md` — do not remove, PaperMod requires it
 - **Build:** `hugo --minify` — always use Extended variant (required for PaperMod SCSS)
 
-## Post Frontmatter
+## Post front-matter
 
 Every post/gallery entry must have:
 
@@ -78,3 +78,20 @@ No custom domain configured. `baseURL` points at the default GitHub Pages URL. I
 
 1. **No padding.** No summaries, no affirmations.
 2. **Do not invent URLs.**
+
+
+## Document versioning
+
+- Every markdown file **SHOULD** (not must) carry a decimal `version:` key in its front matter:
+
+```yaml
+---
+version: 0.1
+---
+```
+
+- `0.1` .. `1.0` — pre-releases leading up to release 1
+- `1.1` .. `2.0` — releases 1.1 through 2.0
+- and so on by the same pattern
+
+SHOULD, not MUST: skip it where this repo forbids front matter, and where front matter already exists just add the `version` key without disturbing the rest.
