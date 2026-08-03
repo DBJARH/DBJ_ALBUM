@@ -1,0 +1,83 @@
+{{/* Renders every image in the current page bundle as a responsive grid with a lightbox. */}}
+<div class="dbj-gallery">
+  {{ range sort (.Page.Resources.ByType "image") "Name" }}
+  <figure class="dbj-gallery-item">
+    <a href="{{ .RelPermalink }}" title="{{ .Name }}">
+      <img src="{{ .RelPermalink }}" alt="{{ .Name }}" loading="lazy" width="{{ .Width }}" height="{{ .Height }}">
+    </a>
+  </figure>
+  {{ end }}
+</div>
+
+{{/* Overlay is inert until JS binds it; the links above stay usable without JS. */}}
+<div class="dbj-lightbox" hidden>
+  <button class="dbj-lb-close" type="button" aria-label="Close">&times;</button>
+  <button class="dbj-lb-prev" type="button" aria-label="Previous">&#8249;</button>
+  <img class="dbj-lb-img" src="" alt="">
+  <button class="dbj-lb-next" type="button" aria-label="Next">&#8250;</button>
+  <div class="dbj-lb-caption"></div>
+</div>
+
+<script>
+(function () {
+  var gallery = document.querySelector('.dbj-gallery');
+  var box = document.querySelector('.dbj-lightbox');
+  if (!gallery || !box) return;
+
+  var links = Array.prototype.slice.call(gallery.querySelectorAll('a'));
+  if (!links.length) return;
+
+  var img = box.querySelector('.dbj-lb-img');
+  var caption = box.querySelector('.dbj-lb-caption');
+  var current = 0;
+  var lastFocus = null;
+
+  function show(i) {
+    current = (i + links.length) % links.length;
+    var link = links[current];
+    img.src = link.getAttribute('href');
+    img.alt = link.getAttribute('title') || '';
+    caption.textContent = (current + 1) + ' / ' + links.length + ' — ' + (link.getAttribute('title') || '');
+  }
+
+  function open(i) {
+    lastFocus = document.activeElement;
+    show(i);
+    box.hidden = false;
+    document.body.style.overflow = 'hidden';
+    box.querySelector('.dbj-lb-close').focus();
+  }
+
+  function close() {
+    box.hidden = true;
+    img.src = '';
+    document.body.style.overflow = '';
+    if (lastFocus) lastFocus.focus();
+  }
+
+  links.forEach(function (link, i) {
+    link.addEventListener('click', function (e) {
+      // Let modified clicks (new tab, save) behave normally.
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+      e.preventDefault();
+      open(i);
+    });
+  });
+
+  box.querySelector('.dbj-lb-close').addEventListener('click', close);
+  box.querySelector('.dbj-lb-prev').addEventListener('click', function () { show(current - 1); });
+  box.querySelector('.dbj-lb-next').addEventListener('click', function () { show(current + 1); });
+
+  // Click the backdrop (not the image or a button) to dismiss.
+  box.addEventListener('click', function (e) {
+    if (e.target === box) close();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (box.hidden) return;
+    if (e.key === 'Escape') close();
+    else if (e.key === 'ArrowLeft') show(current - 1);
+    else if (e.key === 'ArrowRight') show(current + 1);
+  });
+})();
+</script>
