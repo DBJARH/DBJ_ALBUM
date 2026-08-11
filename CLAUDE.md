@@ -16,9 +16,9 @@ This file is written for Claude. It describes this repository and how Claude sho
 
 ## What This Repo Is
 
-**DBJ_ALBUM** is DBJ's public album — a mixed media portfolio (images and writeups).
+**DBJ_ALBUM** is DBJ's album — a mixed media portfolio (images and writeups).
 
-- Live site: https://DBJARH.github.io/DBJ_ALBUM/ (no custom domain yet)
+- Can see the live site using HUGO dev server
 - Built with Hugo Extended + PaperMod theme
 - Deployed via GitHub Actions on push to `main`
 
