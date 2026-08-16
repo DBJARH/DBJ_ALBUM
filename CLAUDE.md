@@ -1,18 +1,8 @@
 # CLAUDE.md
 
-This file is written for Claude. It describes this repository and how Claude should behave here.
-
-## Conversation protocol
-
-- Be very brief in your answers 
-  - If you think you know longer answer is required make it longer
-- Use simple terminology
-  - Move explaining of complex and necessary stuff into footnote section of the document
-    - Call it "Vocabulary"
-- Do not over explain "in line"
-  - Instead use the "Vocabulary" section
-    - And point to external sources if any
-- Do not assume anything, if in doubt ask
+1. This file is written for Claude. It describes this repository and how Claude should behave here.
+2. Make sure user scope claude.md is also read and obeyed `%USERPROFILE%\.claude\CLAUDE.md`
+   1. pay special attention to Conversation protocol, in there
 
 ## What This Repo Is
 
@@ -76,8 +66,7 @@ No custom domain configured. `baseURL` points at the default GitHub Pages URL. I
 
 ## Behavioral Rules
 
-1. **No padding.** No summaries, no affirmations.
-2. **Do not invent URLs.**
+1. **Do not invent URLs.**
 
 
 ## Document versioning
