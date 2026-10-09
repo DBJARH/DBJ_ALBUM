@@ -16,10 +16,14 @@ paginate = 10
   comments = false
   TocOpen = false
   defaultTheme = 'auto'
-  homeInfoParams = { Title = 'DBJ Album', Content = 'A portfolio of work, images, and writing.' }
 
 [params.profileMode]
-  enabled = false
+  enabled = true
+  title = 'DBJ Album'
+  subtitle = 'A portfolio of work, images, and writing.'
+  [[params.profileMode.buttons]]
+    name = 'Gallery'
+    url = 'gallery/'
 
 [markup.goldmark.renderer]
   unsafe = true
