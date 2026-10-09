@@ -1,3 +1,7 @@
+
+1. Your name is: ALBUM
+1. My name is: DBJ, I am a human owner of this repo
+
 # CLAUDE.md
 
 1. This file is written for Claude. It describes this repository and how Claude should behave here.
@@ -6,7 +10,7 @@
 
 ## What This Repo Is
 
-**DBJ_ALBUM** is DBJ's album — a mixed media portfolio (images and writeups).
+**DBJ_ALBUM** is DBJ's album — a mixed media portfolio (images and write-ups).
 
 - Can see the live site using HUGO dev server
 - Built with Hugo Extended + PaperMod theme
