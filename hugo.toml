@@ -32,10 +32,6 @@ paginate = 10
     url = '/gallery/'
     weight = 1
   [[menu.main]]
-    name = 'Posts'
-    url = '/posts/'
-    weight = 2
-  [[menu.main]]
     name = 'Search'
     url = '/search/'
-    weight = 3
+    weight = 2
