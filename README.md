@@ -1,12 +1,10 @@
 # DBJ Album
 
-> A public album by Dusan B. Jovanovic — mixed media portfolio of work and writing.
-
 **Live site:** https://media.dbj.org/
 
 ## What this is
 
-A portfolio of images and writeups.
+> A public album by Dusan B. Jovanovic — mixed media portfolio
 
 ## Structure
 

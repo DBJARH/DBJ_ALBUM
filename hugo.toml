@@ -1,6 +1,6 @@
 baseURL = 'https://media.dbj.org/'
 languageCode = 'en-us'
-title = 'DBJ Album'
+title = 'DBJ Media'
 theme = 'PaperMod'
 paginate = 10
 
