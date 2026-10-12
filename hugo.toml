@@ -18,12 +18,7 @@ paginate = 10
   defaultTheme = 'auto'
 
 [params.profileMode]
-  enabled = true
-  title = 'DBJ Album'
-  subtitle = 'A portfolio of work, images, and writing.'
-  [[params.profileMode.buttons]]
-    name = 'Gallery'
-    url = 'gallery/'
+  enabled = false
 
 [markup.goldmark.renderer]
   unsafe = true
