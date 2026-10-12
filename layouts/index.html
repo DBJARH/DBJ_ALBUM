@@ -1,5 +1,7 @@
 {{- define "main" }}
 
+{{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" false) }}
+
 {{- if .Title }}
 <header class="page-header">
   <h1>{{ .Title }}</h1>
@@ -15,7 +17,7 @@
 
 {{- with site.GetPage "gallery" }}
 {{- range .Pages }}
-<article class="post-entry">
+<article class="post-entry gallery-card">
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" false) }}
   <header class="entry-header">
     <h2 class="entry-hint-parent">{{ .Title }}</h2>
