@@ -1,4 +1,4 @@
-baseURL = 'https://DBJARH.github.io/DBJ_ALBUM/'
+baseURL = 'https://media.dbj.org/'
 languageCode = 'en-us'
 title = 'DBJ Album'
 theme = 'PaperMod'

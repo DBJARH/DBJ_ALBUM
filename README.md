@@ -2,7 +2,7 @@
 
 > A public album by Dusan B. Jovanovic — mixed media portfolio of work and writing.
 
-**Live site:** https://dbjarh.github.io/DBJ_ALBUM/
+**Live site:** https://media.dbj.org/
 
 ## What this is
 
