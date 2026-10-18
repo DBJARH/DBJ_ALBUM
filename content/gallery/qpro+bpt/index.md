@@ -11,6 +11,8 @@ cover:
 
 {{< gallery >}}
 
-AI seas are never calm.Business Ship  Crew is well trained but stretched to their limits. Sheila is working on the human level. Sheila is a counsellor on that huge business ship. She cares. Her role is important.
+AI seas are never calm.Business Ship Crew is well trained but stretched to their limits. Sheila is working on the human level. Sheila is a counsellor on that huge business ship. She cares. Her role is important.
+
+https://qpro.ai/
 
 
