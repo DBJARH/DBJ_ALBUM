@@ -5,7 +5,13 @@
 # CLAUDE.md
 
 1. This file is written for Claude. It describes this repository and how Claude should behave here.
-2. shared claude md is imported: @G:\REPOS\DBJ-AI-RUNTIME\shared_claude_md\SHARED_CLAUDE.md
+2. shared claude md is imported right here:
+   1. On Windows
+      1. @G:\REPOS\DBJ-AI-RUNTIME\shared_claude_md\SHARED_CLAUDE.md
+   2. On Linux and macOS
+      1. @~/REPOS/DBJ-AI-RUNTIME/shared_claude_md/SHARED_CLAUDE.md
+         1. pay special attention to Conversation protocol, in there
+   3. If SHARED_CLAUDE.md is not found warn the user. Probably that repo is not available on the current machine.
 
 ## What This Repo Is
 
